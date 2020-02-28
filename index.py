@@ -6,17 +6,21 @@ import time
 
 
 ###BOT API###
-bot = telebot.TeleBot("")
+bot = telebot.TeleBot("974906067:AAEQWzRC8MFIlMbSjxZOD26FbA7bbRGsmB4")
 ###BOT API###
 
+#Выберете язык вашей системы [1]Ru [2]En Select language your system
+language = 1
 
-try:
-    language = int(input("[1](RU)ssian\n[2](EN)glish\nSelect the language of your Linux system"))
-except:
-    print("Please enter an intager!!!")
-
-if language == 1:
-    username = input("Пожалуйста введите имя пользователя для того чтобы знать через какую директорию загружать файл: ")
+if language == 1:#РУССКИЙ
+    #Пожалуйста введите имя пользователя в переменную user name для того чтобы знать через какую директорию загружать файл:
+  #####################
+  ###               ###
+  ##                 ##
+    username = 'root'
+  ##                 ##
+  ###               ###
+  #####################
     if username == 'root':
         folder = "/root/Изображения/aircrackscreen/file.jpg"
     else:
@@ -26,8 +30,18 @@ if language == 1:
     #print("Окей вот он русский ;)")
 
     reply = "Пожалуйста выполните комманду в линукс терминале [aircrack-ng file.cap -w wordlist.txt && python3 index.py] объясняю после того как словарь перебереться тогда сделается скриншот и отпрвиться к вашему телеграмм боту"
-elif language == 2:
-    username = input("Please enter a username in order to know through which directory to upload the file: ")
+elif language == 2:#ENGLISH
+    #Please enter a username for variable 'username' in order to know through which directory to upload the file:
+    
+  #####################
+  ###               ###
+  ##                 ##
+    username = 'root'
+  ##                 ##
+  ###               ###
+  #####################
+
+
     if username == 'root':
         folder = "/root/Picture/aircrackscreen/file.jpg"
     else:
